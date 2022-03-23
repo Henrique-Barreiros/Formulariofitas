@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  .corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .Principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .HeaderCompra {
+    width: 100%;
+  }
+  .Box {
+    list-style: none;
+    padding: 0px;
+  }
+  .Box > li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+  }
+  .imagem {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  .TipoAdesivos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .TipoAdesivos input {
+    cursor: pointer;
+  }
+  .Linhadebotao {
+    display: flex;
+  }
+  .Linhadebotao {
+    display: flex;
+    margin: 20px;
+  }
+  .Quantidade {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .botao {
+    width: 40px;
+    height: 40px;
+    background-color: #2f3676;
+    border-radius: 1cm black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .valor {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #2f3676;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px;
+    background-color: #dde3e9;
+  }
+  .texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .texto textarea {
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #2f3676;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #dde3e9;
+    outline: 0;
+  }
+  
+  .Btn {
+    background-color: #dde3e9;
+    margin-top: 2rem;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20rem;
+  }
+  
+  .Btn button {
+    width: 120px;
+    height: 40px;
+    background-color: #2f3676;
+    border-radius: 1cm black;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .active {
+    display: flex !important;
+  }
+  .modal {
+    display: none;
+    width: 50%;
+    background-color: #dde3e9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .btnFechar {
+    background-color: white;
+    padding: 0.5rem 0.5rem 0.5rem 0.6rem;
+    border-radius: 100%;
+    width: 2rem;
+    top: 5%;
+    left: 93%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  .produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .produto ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produto ul>li{
+    display: inline-flex;
+    border: 1px solid #ccc;
+  }

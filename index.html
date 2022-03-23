@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario de compra</title>
+</head>
+
+<body>
+    <div class="corpo">
+        <header class="HeaderCompra">
+            <img src="imgs/banner.png" />
+        </header>
+        <div class="Principal">
+            <div class="TipoAdesivos">
+                <font face="lato" size="4">Quais adesivos:</font>
+                <p></p>
+                <ul class="Box">
+                    <li>
+                        <img src="imgs/FitaIsolante.jpg" width="150" />
+                        <div>
+                            <input type="checkbox" class="produtos" id="Fitaisolante"
+                                value="Fitaisolante,imgs/FitaIsolante.jpg" />Fita Isolante
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/FitaAdesiva.jpg" width="150" />
+                        <div>
+                            <input type="checkbox" class="produtos" id="Fitaadesiva"
+                                value="Fitaadesiva,imgs/FitaAdesiva.jpg" />Fita Adesiva
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/FitaVermelha.jpg" width="150" />
+                        <div>
+                            <input type="checkbox" class="produtos" id="FitaVermelha"
+                                value="FitaVermelha,imgs/FitaVermelha.jpg" />Fita Vermelha
+                            <p></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Quantidade">
+                <font face="lato" size="4">Quantos adesivos cada?</font>
+                <div class="Linhadebotao">
+                    <button onclick="decrescer()" class="botao" class="menos-" id="botao-">
+                        -
+                    </button>
+                    <div class="valor" id="valor">0</div>
+                    <button onclick="acrescentar()" class="botao" id="botao+">+</button>
+                </div>
+            </div>
+            <div class="texto">
+                <font face="lato" size="4">Observações:</font>
+                <p></p>
+                <textarea type="obs" value="Texto">Alguma dúviva? Recado?</textarea>
+            </div>
+        </div>
+        <footer class="Btn">
+            <button onclick="enviar()" id="btnSubmit">Enviar</button>
+        </footer>
+    </div>
+    <div class="modal" id="modal">
+        <header>
+            <h1>Finalizar compra</h1>
+        </header>
+        <a onclick="fecharModal()" class="btnFechar">✖</a>
+        <div class="produto" id="main">
+            <ul id="produtosSelecionados">
+
+            </ul>
+            <div id="quantidade" style="margin-top: 1rem;"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
